@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: web-api-deployment
+  labels:
+    app: web-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: web-api
+  template:
+    metadata:
+      labels:
+        app: web-api
+    spec:
+      containers:
+        - name: web-api
+          image: loyolastalin/stalin-web-api:v6
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8080
+          env:
+          - name: ASPNETCORE_ENVIRONMENT
+            value: "Development"
+          volumeMounts:
+            - name: appsettings-config
+              mountPath: /app/configmap
+      volumes:
+        - name: appsettings-config
+          configMap:
+            defaultMode: 420
+            name: webapi-appsettings-config
+
+   
