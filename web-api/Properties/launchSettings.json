@@ -6,7 +6,7 @@
       "launchUrl": "swagger",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development",
-        "sqldb-connection-string" : "Server=localhost, 1433;Database=product;User Id=sa;Password=password!;TrustServerCertificate=True"
+        "sqldb-connection-string" : "Server=192.168.0.101, 1433;Database=product;User Id=sa;Password=password!;TrustServerCertificate=True"
       },
       "dotnetRunMessages": true,
       "applicationUrl": "http://localhost:5217"
