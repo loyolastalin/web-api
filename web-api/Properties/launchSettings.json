@@ -5,7 +5,8 @@
       "launchBrowser": true,
       "launchUrl": "swagger",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "sqldb-connection-string" : "Server=localhost, 1433;Database=product;User Id=sa;Password=password!;TrustServerCertificate=True"
       },
       "dotnetRunMessages": true,
       "applicationUrl": "http://localhost:5217"
@@ -16,6 +17,8 @@
       "launchUrl": "swagger",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
+        ,
+        "sqldb-connection-string" : "SQL Connection string from IIS Express"
       }
     },
     "Container (Dockerfile)": {
@@ -24,7 +27,8 @@
       "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/swagger",
       "environmentVariables": {
         "ASPNETCORE_HTTP_PORTS": "8080",
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "CONNECTION_STRING_FROM_SECRET" : "SQL Connection string from Docker"
       },
       "publishAllPorts": true,
       "useSSL": false

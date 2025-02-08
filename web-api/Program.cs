@@ -1,3 +1,6 @@
+using Microsoft.EntityFrameworkCore;
+using web_api.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -13,8 +16,12 @@ builder.Configuration.AddJsonFile("appsettings.json", true)
                     .AddJsonFile("/app/secrets/appsettings.secrets.json", true, true)
                     // Override configuration by environment, using like Logging:Level or Logging__Level
                     .AddEnvironmentVariables();
-var app = builder.Build();
+var connectionString = Environment.GetEnvironmentVariable("sqldb-connection-string");
+Console.WriteLine($"Connection string from secret: {connectionString}");
+builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(connectionString));
 
+builder.Services.AddTransient<IProductRepository, ProductRepository>();
+var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

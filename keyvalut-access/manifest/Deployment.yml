@@ -1,0 +1,49 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: web-api-deployment
+  labels:
+    app: web-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: web-api
+  template:
+    metadata:
+      labels:
+        app: web-api
+    spec:
+      containers:
+        - name: web-api
+          image: loyolastalin/stalin-web-api:v8
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8080
+          env:
+          - name: ASPNETCORE_ENVIRONMENT
+            value: "Development"
+          - name: sqldb-connection-string
+            valueFrom: 
+                secretKeyRef:
+                  name: sqldb-connection-string
+                  key: password
+          volumeMounts:
+            - name: appsettings-config
+              mountPath: /app/configmap
+            - name: secrets-store01-inline
+              mountPath: "/mnt/secrets-store"
+              readOnly: true
+      volumes:
+        - name: appsettings-config
+          configMap:
+            defaultMode: 420
+            name: webapi-appsettings-config
+        - name: secrets-store01-inline
+          csi:
+            driver: secrets-store.csi.k8s.io
+            readOnly: true
+            volumeAttributes:
+              secretProviderClass: "azure-kvname-system-msi"
+
+   
