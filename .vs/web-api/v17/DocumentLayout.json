@@ -1,12 +1,67 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\.netproj\\web-api\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\.netproj\\web-api\\OpentelimetryApi\\OpentelemetryApi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:OpentelimetryApi\\OpentelemetryApi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\.netproj\\web-api\\OpentelimetryApi\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:OpentelimetryApi\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\.netproj\\web-api\\OpentelimetryApi\\Dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:OpentelimetryApi\\Dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\.netproj\\web-api\\OpentelimetryApi\\Program.cs",
+              "RelativeDocumentMoniker": "OpentelimetryApi\\Program.cs",
+              "ToolTip": "D:\\.netproj\\web-api\\OpentelimetryApi\\Program.cs",
+              "RelativeToolTip": "OpentelimetryApi\\Program.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAQwBsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-09T11:11:56.831Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "OpentelemetryApi.csproj",
+              "DocumentMoniker": "D:\\.netproj\\web-api\\OpentelimetryApi\\OpentelemetryApi.csproj",
+              "RelativeDocumentMoniker": "OpentelimetryApi\\OpentelemetryApi.csproj",
+              "ToolTip": "D:\\.netproj\\web-api\\OpentelimetryApi\\OpentelemetryApi.csproj",
+              "RelativeToolTip": "OpentelimetryApi\\OpentelemetryApi.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-02-09T11:11:48.209Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "D:\\.netproj\\web-api\\OpentelimetryApi\\Dockerfile",
+              "RelativeDocumentMoniker": "OpentelimetryApi\\Dockerfile",
+              "ToolTip": "D:\\.netproj\\web-api\\OpentelimetryApi\\Dockerfile",
+              "RelativeToolTip": "OpentelimetryApi\\Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-02-09T10:33:46.938Z"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
