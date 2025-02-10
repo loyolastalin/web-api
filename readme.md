@@ -67,26 +67,3 @@ CREATE DATABASE product;
 **(**3**,**'Running Shoes'**,**'Lightweight athletic shoes for men'**,**89.99**,**'Footwear'**,**75**)**,
 **(**4**,**'Leather Wallet'**,**'Genuine leather bifold wallet'**,**45.00**,**'Accessories'**,**30**)**,
 **(**5**,**'Smart Watch'**,**'Fitness tracking smartwatch with heart rate monitor'**,**199.99**,**'Electronics'**,**40**);
-
-
-**Adding Monitoring:**
-
-kubectl create ns prometheus
-
-helm repo **add** prometheus-community https://prometheus-community.github.io/helm-charts
-helm repo update
-
-helm install prometheus prometheus-community/prometheus -n prometheus
-
-
-![1739018548647](image/readme/1739018548647.png)
-
-helm repo add grafana https://grafana.github.io/helm-charts
-
-helm install grafana grafana/grafana -n prometheus
-
-kubectl port-forward -n prometheus prometheus-prometheus-kube-prometheus-prometheus-0 9090
-
-kubectl port-forward -n prometheus grafana 3000
-
-![1739018677163](image/readme/1739018677163.png)
